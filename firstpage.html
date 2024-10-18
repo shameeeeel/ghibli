@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/ghibli" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#movie">Watch here</a></li>
+        </ul>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li class="hideOnMobile"><a href="#about">About us</a></li>
+            <li class="hideOnMobile"><a href="#movie">Watch here</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <section id="home">
+    <h1>GHIBLI MOVIES</h1>
+    <p>Come and watch Ghibli Movies with us.</p>
+    </section>
+    <section id="movie">
+        <div class="cards">
+            <div class="image">
+                <image src="totoro.jpg"></image>
+            </div>
+            <div class="title">
+                <h5>My Neighbor Totoro</h5>
+            </div>
+            <div class="des">
+                <p1>A heartwarming exploration of childhood wonder and the enchantment of the natural world.</p1>
+                <button type="button" onclick="location.href='https://aniwatchtv.to/my-neighbor-totoro-188?ref=search'">Watch Now</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="image">
+                <image src="st2.jpg"></image>
+            </div>
+            <div class="title">
+                <h5>Spirited Away</h5>
+            </div>
+            <div class="des">
+                <p1>A family takes a wrong turn, leading a young girl into a dark adventure filled with haunting imagery. </p1>
+                <button type="button" onclick="location.href='https://aniwatchtv.to/spirited-away-20?ref=search'">Watch Now</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="image">
+                <image src="marnie.jpg"></image>
+            </div>
+            <div class="title">
+                <h5>When Marnie was there</h5>
+            </div>
+            <div class="des">
+                <p1>When Marnie Was There is a hauntingly beautiful story of friendship and self-discovery. </p1>
+                <button type="button" onclick="location.href='https://aniwatchtv.to/when-marnie-was-there-360?ref=search'">Watch Now</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="image">
+                <image src="st1.jpg"></image>
+            </div>
+            <div class="title">
+                <h5>Grave of the Fireflies</h5>
+            </div>
+            <div class="des">
+                <p1>The story of a brother and sister surviving on their own amid firestorms and famine during WW2. </p1>
+                <button type="button" onclick="location.href='https://aniwatchtv.to/grave-of-the-fireflies-96?ref=search'">Watch Now</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <section class="about">
+            <div class="main">
+                <img src="menic.jpg">
+                <div class="about-text">
+                    <h3>About Us</h3>
+                    <h6>College<span> Student</span></h6>
+                    <p2>Good day! I am Domenic Lopez. If you have some question or suggestion regarding to my project, please do click the "Let's talk" button so we can talk about it. Thank you!</p2>
+                    <button type="button" onclick="location.href='https://web.facebook.com/Domenic143'">Let's Talk</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</body>
+</html>
